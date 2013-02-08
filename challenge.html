@@ -4,6 +4,20 @@
 	<link href='http://fonts.googleapis.com/css?family=Arapey:400italic,400' rel='stylesheet' type='text/css'>	
 	<link type="text/css" rel="stylesheet" href="challenge.css">
 	<title>CSS Challenge</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="raptor/jquery.raptorize.1.0.js"></script>
+	<script type="text/javascript">
+     $(window).load(function() {
+          $('.myButton').raptorize();
+     });//end raptorize
+	</script>
+	<script>
+	
+		$('.myButton').click(function(e){
+			e.preventDefault();
+		});//end click
+
+	</script>
 	</head>
 	<body>
 <!--Begin Wrapper--><div id="wrapper">
@@ -19,12 +33,12 @@
 
 				<nav>
 					<ul>
-<!--Background image in css-->  <li><a href="">home</a></li>
-								<li><a href="">about</a></li>
-								<li><a href="">services</a></li>
-								<li><a href="">blog</a></li>
-								<li><a href="">projects</a></li>
-								<li><a href="">contacts</a></li>
+<!--Background image in css-->  <li><a href="" class="myButton">home</a></li>
+								<li><a href="" class="myButton">about</a></li>
+								<li><a href="" class="myButton">services</a></li>
+								<li><a href="" class="myButton">blog</a></li>
+								<li><a href="" class="myButton">projects</a></li>
+								<li><a href="" class="myButton">contacts</a></li>
 					</ul>
 				</nav>
 			</div>					<!--end inner head div-->
@@ -58,7 +72,7 @@
 										</div>
 										<div class="bottom_left">
 	<!--create anchor tag instead of div--><div class="details_gray">
-										  	<a href="">DETAILS</a>
+										  	<a href="" class="mybutton">DETAILS</a>
 										  </div>
 										</div>
 										<div class="bottom_right">
@@ -80,7 +94,7 @@
 										</div>
 										<div class="bottom_left">
 											<div class="details_gray">
-												<a href="">DETAILS</a>
+												<a href="" class="mybutton">DETAILS</a>
 											</div>
 										</div>	
 										<div class="bottom_right">
@@ -102,7 +116,7 @@
 										</div>
 										<div class="bottom_left">
 											<div class="details_gray">
-												<a href="">DETAILS</a>
+												<a href="" class="mybutton">DETAILS</a>
 											</div>
 										</div>
 										<div class="bottom_right">
